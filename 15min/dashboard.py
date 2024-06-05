@@ -12,7 +12,7 @@ st.set_page_config(layout="wide")
 # Como estão as avaliações das filiais
 
 
-df = pd.read_csv("Asimov/15min/supermarket_sales.csv", sep=";", decimal=",")
+df = pd.read_csv("15min/supermarket_sales.csv", sep=";", decimal=",")
 df["Date"] = pd.to_datetime(df["Date"])
 df = df.sort_values("Date")
 
